@@ -2903,13 +2903,12 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertIn(f"declared={declared}", mismatch)
             self.assertIn(f"actual={actual}", mismatch)
 
-    def test_manifest_self_referential_sha256_is_skipped(self) -> None:
-        """manifest.json cannot declare a valid sha256 for itself (self-referential).
+    def test_manifest_self_referential_sha256_is_rejected(self) -> None:
+        """manifest.json must not declare sha256 for itself (self-referential).
 
         All four official scripts (scaffold, finalize, backfill, refresh) skip
-        manifest.json's own hash. The validator must do the same — otherwise
-        the hash can never match, because writing the correct hash changes
-        the file's hash.
+        manifest.json's own hash. The validator must reject it explicitly so
+        that strict manifests do not carry meaningless integrity metadata.
         """
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -2928,10 +2927,10 @@ class SubmissionWorkflowTests(unittest.TestCase):
                 json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
             )
             report = validate_submission(root, "alice", changed)
-            # No error should mention sha256 mismatch for manifest.json itself
-            self.assertFalse(
-                any("sha256 mismatch for `manifest.json`" in e for e in report.errors),
-                f"validator should skip manifest.json self-hash, but got: {report.errors}",
+            self.assertFalse(report.ok)
+            self.assertTrue(
+                any("manifest.json must not declare sha256" in e for e in report.errors),
+                f"expected 'must not declare sha256' error, but got: {report.errors}",
             )
 
     def test_manifest_content_hash_mismatch_still_reported(self) -> None:
