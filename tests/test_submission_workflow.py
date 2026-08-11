@@ -2903,6 +2903,70 @@ class SubmissionWorkflowTests(unittest.TestCase):
             self.assertIn(f"declared={declared}", mismatch)
             self.assertIn(f"actual={actual}", mismatch)
 
+    def test_manifest_self_referential_sha256_is_skipped(self) -> None:
+        """manifest.json cannot declare a valid sha256 for itself (self-referential).
+
+        All four official scripts (scaffold, finalize, backfill, refresh) skip
+        manifest.json's own hash. The validator must do the same — otherwise
+        the hash can never match, because writing the correct hash changes
+        the file's hash.
+        """
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            # Inject a deliberately wrong sha256 into the manifest.json entry
+            for item in manifest["files"]:
+                if item.get("path") == "manifest.json":
+                    item["sha256"] = "0" * 64
+                    break
+            else:
+                self.fail("manifest.json entry not found in files array")
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+            )
+            report = validate_submission(root, "alice", changed)
+            # No error should mention sha256 mismatch for manifest.json itself
+            self.assertFalse(
+                any("sha256 mismatch for `manifest.json`" in e for e in report.errors),
+                f"validator should skip manifest.json self-hash, but got: {report.errors}",
+            )
+
+    def test_manifest_content_hash_mismatch_still_reported(self) -> None:
+        """A real sha256 mismatch for a non-manifest file must still be reported.
+
+        This is the regression guard: the self-hash fix must not accidentally
+        silence genuine content drift for other files.
+        """
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            base = "submissions/alice/ai-urban-loop"
+            changed = self.write_minimal_ai_package(root, base)
+            # Tamper with metrics.json but keep the old manifest hash
+            metrics_path = root / base / "metrics.json"
+            original_hash = hashlib.sha256(metrics_path.read_bytes()).hexdigest()
+            metrics_path.write_text(
+                metrics_path.read_text(encoding="utf-8") + "\n  // tampered\n",
+                encoding="utf-8",
+            )
+            # Ensure the manifest still has the original (now stale) hash
+            manifest_path = root / base / "manifest.json"
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            for item in manifest["files"]:
+                if item.get("path") == "metrics.json":
+                    item["sha256"] = original_hash
+                    break
+            manifest_path.write_text(
+                json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+            )
+            report = validate_submission(root, "alice", changed)
+            mismatch = next(
+                error for error in report.errors if "sha256 mismatch for `metrics.json`" in error
+            )
+            self.assertIn(f"declared={original_hash}", mismatch)
+
     def test_removed_translation_file_is_non_blocking(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
