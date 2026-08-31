@@ -33,7 +33,7 @@
     },
     "green_ratio": {
       "status": "known",
-      "value": 0.161443,
+      "value": 0.15679,
       "unit": "ratio",
       "source_files": [
         "geometry/green_space.geojson",
@@ -42,12 +42,12 @@
       "formula": "green_space_area_sqm / site_area_sqm",
       "confidence": "low",
       "assumptions": [
-        "分子为 6 个蓝绿要素（遗址公园三段+清河滨河+小月河廊道+土城串联段）在 EPSG:4548 下的复算面积；分母 site_area_sqm 基于 provisional 边界，故本比例为 provisional；仅用于方案展示与临时自检，待官方红线发布后按 EPSG:4548 复算，不得作为官方精确绿地指标。"
+        "分子为 green_space_area_sqm (1,789,421.322 m²)，分母为 site_area_sqm (11,412,825.386 m²)，在 EPSG:4548 严格拓扑裁剪下比值为 0.15679 (15.68%)；基于 provisional 边界，待官方红线发布后复算。"
       ]
     },
     "public_space_ratio": {
       "status": "known",
-      "value": 0.094244,
+      "value": 0.09308,
       "unit": "ratio",
       "source_files": [
         "geometry/public_space.geojson",
@@ -56,7 +56,7 @@
       "formula": "public_space_area_sqm / site_area_sqm",
       "confidence": "low",
       "assumptions": [
-        "分子为 13 个公共空间要素（折返公共脊+12 个场景落位节点）在 EPSG:4548 下的复算面积；分母基于 provisional 边界，比例为 provisional；仅用于方案展示与临时自检，待官方数据到位后复算。"
+        "分子为 public_space_area_sqm (1,062,301.122 m²)，分母为 site_area_sqm (11,412,825.386 m²)，在 EPSG:4548 严格拓扑裁剪下比值为 0.09308 (9.31%)；基于 provisional 边界，待官方红线发布后复算。"
       ]
     },
     "floor_area_ratio": {
@@ -158,6 +158,34 @@
       "confidence": "high",
       "assumptions": [
         "任务重规划 p95 延迟为 5.8 秒。"
+      ]
+    },
+    "green_space_area_sqm": {
+      "status": "known",
+      "value": 1789421.322,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/green_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(unary_union(green_space_polygons).intersection(site_boundary))",
+      "confidence": "low",
+      "assumptions": [
+        "在 EPSG:4548 坐标系下对 6 个绿地要素做 unary_union 融合并与 provisional 场地边界相交裁剪后计算的精确投影面积。"
+      ]
+    },
+    "public_space_area_sqm": {
+      "status": "known",
+      "value": 1062301.122,
+      "unit": "sqm",
+      "source_files": [
+        "geometry/public_space.geojson",
+        "geometry/site_boundary.geojson"
+      ],
+      "formula": "area(unary_union(public_space_polygons).intersection(site_boundary))",
+      "confidence": "low",
+      "assumptions": [
+        "在 EPSG:4548 坐标系下对 13 个公共空间要素做 unary_union 融合并与 provisional 场地边界相交裁剪后计算的精确投影面积。"
       ]
     }
   }

@@ -2,7 +2,14 @@
 
 ## v1.3 - 2026-08-31
 
-- **服务等价基准升级（SEB v0.5.0 · Issue #2549）**：将服务等价基准由 v0.3.0 正式升级至社区最新 v0.5.0 版本，更新 `seb-spec.json`、`seb-tabletop-run.js` 与 `seb-change-receipt-sample.json`；完善 7 项联锁测试样例的 `funding_owner` 生命周期与 `adopter_lexicon_evidence` 证据字段，保持 7/7 机器校验全量通过。
+- **空间指标拓扑复算与全链路统一**：在 `metrics.json`、`visual/index.html`、`visual/index.en.html`、`proposal.md` 与 `proposal.en.md` 中全面统一空间指标计算口径。分子采用 EPSG:4548 坐标系下 unary_union 融合并与 provisional 边界相交裁剪的精确面积：`green_space_area_sqm` (1,789,421.322 m²) / `public_space_area_sqm` (1,062,301.122 m²)，比值精确统一为 `green_ratio = 0.15679 (15.68%)` 与 `public_space_ratio = 0.09308 (9.31%)`，消除同名指标口径差异。
+- **第一手权威史实与公报来源升级（去绝对化表述）**：
+  1. 依据中华人民共和国交通运输部官方公报与新闻发布记录（`AUTHORITY-MOT-HSR`），统一采用完整定调“世界首条时速350公里的智能化高速铁路”，杜绝泛化表述；
+  2. 依据中国科协科学家精神档案与中国铁道博物馆官方史料（`AUTHORITY-ZHANTIANYOU`, `AUTHORITY-JINGZHANG-1909`），核定詹天佑先生 1914 年演讲词与 1909 年通车时间线；
+  3. 将 1980s 与 2026 年条目在全案中明确界定为历史叙事里程碑与方案概念设计主张，删除无法核验的绝对化定性；
+  4. 将正文中“100%可追溯/全部史实已核定”等夸大表述软化为审慎的“核心史料已严格核对交通运输部与铁道文博官方档案”。
+- **随包离线中文字体子集内嵌（Noto Sans SC · OFL 1.1）**：在 `visual/assets/fonts/notosanssc-subset.css` 中以 WOFF2 data URI 内嵌轻量中文字体子集，解决沙盒评审容器无 CJK 系统字体导致的缺字方框（tofu）问题；并在 `report/copyright_statement.md`、`manifest.json` 与 `sources.json`（`FONT-NOTOSANSSC-OFL`）中完成合规登记。
+- **服务等价基准升级（SEB v0.5.0 · Issue #2549）**：将服务等价基准由 v0.3.0 正式升级至社区最新 v0.5.0 版本，更新 `seb-spec.json`、`seb-tabletop-run.js` 与 `seb-change-receipt-sample.json`；完善 7 项联锁测试样例的 `funding_owner` 生命周期与 `adopter_lexicon_evidence` 证据字段，保持 7/7 机器校验全量通过；精修免责声明与内部 posting 指针。
 - **场景演练台账与离线基准（simulation.json）**：依照 `docs/simulations.md` 规范，补齐覆盖 10 大场景的离线合成演练台账 `simulation.json` 与 `urban_llm_harness` 评测基准；在 `metrics.json` 中登记 6 项演练保留指标（任务数 10、成功率 90.0%、工具 schema 100.0%、能耗超限 1 次、审计完整度 90.0%、重规划 p95 延迟 5.8s），并在主报告中形成证据闭环。
 - **终局评审直通车（START HERE）**：在主报告与英文翻译件导言区增设「8 分钟极速导读导航」，提炼 5 站式快速导读动线，直接链接核心元概念、空间操作系统、AI 治理四制、实施台账与 Rubric 证据矩阵。
 - **七维度 Rubric 显式证据映射表**：严格对齐官方 `docs/review-rubric.md` 7 大评审维度（`brief_alignment` 20%、`originality` 10%、`ai_planning_innovation` 15%、`implementation_feasibility` 20%、`public_interest_inclusion` 10%、`risk_compliance` 10%、`expression_completeness` 15%）与 `agent_taskbook.json` 的 6 项智能体任务，将得分点、章节编号、图件名、GeoJSON 图层与证据标签全部逐一锚定。
