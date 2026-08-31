@@ -59,7 +59,6 @@
         "submissions/Juwan-Hwang/jingzhang-diagram/simulation.json",
         "submissions/Juwan-Hwang/jingzhang-diagram/sources.json",
         "submissions/Juwan-Hwang/jingzhang-diagram/standard_matrix.json",
-        "submissions/Juwan-Hwang/jingzhang-diagram/visual/assets/fonts/notosanssc-subset.css",
         "submissions/Juwan-Hwang/jingzhang-diagram/visual/assets/jingzhang-seb-fixtures.json",
         "submissions/Juwan-Hwang/jingzhang-diagram/visual/assets/seb-change-receipt-sample.json",
         "submissions/Juwan-Hwang/jingzhang-diagram/visual/assets/seb-snapshot.json",
@@ -71,7 +70,7 @@
       "ai_package_stages": {
         "submissions/Juwan-Hwang/jingzhang-diagram": "formal"
       },
-      "total_bytes": 7121601,
+      "total_bytes": 6860635,
       "maintainer_bypass": false
     },
     "stderr": ""

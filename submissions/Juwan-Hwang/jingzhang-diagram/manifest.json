@@ -44,19 +44,19 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "6e7b29ba102069fd11a18596c9edff72e2fea834772cc118de950867d6bf557d"
+      "sha256": "ddcf86ba60f34b2c616bf61419ec3ce238e5444e9562e02cb57fe405a21ccfe4"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "4fd98a725bd88c3eb67da8ef933d7a0e3ea4a4f8a65a9ca1ec30481e6ac69666"
+      "sha256": "b221fc270b728b7fa78a4b5b0b72eed86b06c5e8dd9f2d97fa9be0060ab6d1bd"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "8a273b60ddb889c7012ce654630ee17799c694494e74f0c42c7d654e75a08066"
+      "sha256": "7b3b64323e8fdf4fa9ee3b425b6230ca0a5c91d57d617518dcb1e17402199ac2"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "23587f534e0d4b68b911874da1589c492c9055f9749c8e7d4009c5c129137045"
+      "sha256": "39563b3a0d9013e340e4f47d51a31bfdc93d3eb43547cb484d2977e86d5b8e9c"
     },
     {
       "path": "report/narrative.md",
@@ -93,28 +93,28 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "1fb21be58187578e94fc64a198944170b936538b5ad634d77f93dc88857d05ff"
+      "sha256": "ec22093a9584cfb310bb6df5c5eb24021adc5d41da63a1e6aa3449e977a17da2"
     },
     {
       "path": "drawings/a3-booklet.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "6bbd7e2d3b4d6531286d59281cb2ab1b060bcfb56ae7cbf15db6ce933c209ca9"
+      "sha256": "5487e3baf76ae95efe06e8f94236cd4352a33be6d36bc582565bc53cc016b370"
     },
     {
       "path": "drawings/a0-boards.pdf",
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "d3e63cc40c82fcbb7eac424fa87b2af78f47c4c8a690dbe83ee89a7651adc860"
+      "sha256": "0f390b7a67ddf8f830b2bae584d7aa14a83c7332d6a4c16c5b2e1a816cd4876b"
     },
     {
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "a0387e62cd9dbe855f76fb889a96b028c1ccad01ca56323df8bdb6e544a20cfa"
+      "sha256": "7f15e0de169bd0002010b8d29f9b2088d86765ccc7c745c907ec2f1e0e9d91fa"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -149,7 +149,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "f71fc71f5b1032ff8b90b9ab4ee4c98d7e657edb58ab4783be6e9c532fbf160c"
+      "sha256": "285008e00852c3e631b222c45b715e2fdce176eb6700c6bdd502196b8f6363d9"
     },
     {
       "path": "geometry/buildings.geojson",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "4a201de47415761bf63c53824d44b92d4131fbbf5202aa24d98d23dcbe6b562b"
+      "sha256": "8bfee72a34a0a85e9f4d476eac917803f708c4f241d2e627bbcf1125158e118b"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -227,7 +227,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a3-booklet.pdf",
-      "sha256": "39d311858265f05e916fcea8bcd503cdd3abb0682511eedd4cf0d5a0fc5e0fab"
+      "sha256": "b359d721fcf0510995bbb4fad0a532387a7f8528dbea755cd3bad7f3b624ad47"
     },
     {
       "path": "drawings/a0-boards.en.pdf",
@@ -235,7 +235,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "5dbbfaa870e7d7b3abd15b8ecad53301a7b63d6060f6c684cd1cd8d0869b04f8"
+      "sha256": "2661470599785441defc048582c9fb65c14cd67a8168477a61f8e2cc48eff4de"
     },
     {
       "path": "visual/index.en.html",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "424019679d522d8fdbb3c6cad1a1d786068188e6cb1619a0c9e61e29afd7dffb"
+      "sha256": "d1444f2fa853ce0df62c92d475d76ea47f5a923bc1f95d533d7ba8674868563b"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -283,18 +283,7 @@
       "required": true,
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
-      "sha256": "3f4cf04235cea49136e89423d5cf63193ddabfbc9782be434eadc7d9fa2e34ba"
-    },
-    {
-      "path": "visual/assets/fonts/notosanssc-subset.css",
-      "role": "visualization",
-      "required": false,
-      "language": "neutral",
-      "sha256": "383ace0279276d0f29d064dfb31de2b1904a081a97324dc72fcb7416effea6ed",
-      "title_zh": "随包中文字体子集（Noto Sans SC，SIL OFL 1.1）",
-      "title_en": "Bundled Chinese font subset (Noto Sans SC, SIL OFL 1.1)",
-      "description_zh": "供离线评审环境加载以避免中文缺字方框的 Noto Sans SC 字体子集样式表。",
-      "description_en": "Subsetted Noto Sans SC font stylesheet embedded as WOFF2 data URI to avoid tofu in offline containers."
+      "sha256": "914b54b85e489ff5de738cfc883cc4c07156619d8ef23c24693f968c98558588"
     }
   ],
   "validation_claim": {

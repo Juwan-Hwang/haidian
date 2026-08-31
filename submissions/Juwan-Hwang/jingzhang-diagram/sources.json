@@ -23,13 +23,13 @@
       "id": "BOUNDARY-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Submitted site boundary geometry source (provisional)."
+      "usage": "Submitted site boundary geometry source (provisional, non-statutory)."
     },
     {
       "id": "KEY-AREA-SOURCE",
       "path": "brief/site-package/geometry/provisional_boundaries.geojson",
       "source_type": "agent_inferred_from_public_data",
-      "usage": "Three required detailed-design key area boundaries (provisional)."
+      "usage": "Three required detailed-design key area boundaries (provisional, non-statutory)."
     },
     {
       "id": "OFFICIAL-ANNOUNCEMENT",
@@ -45,24 +45,24 @@
     },
     {
       "id": "AUTHORITY-MOT-HSR",
-      "url": "https://www.mot.gov.cn/",
+      "url": "https://www.mot.gov.cn/jiaotongyaowen/202503/t20250305_4154821.html",
       "source_type": "government_official_statement",
       "accessed_date": "2026-08-31",
-      "usage": "中华人民共和国交通运输部官方公报与新闻发布记录（2025年全国两会部长通道等）：明确京张高铁为'世界上第一条时速350公里的智能化高速铁路'。本方案严格采用带'时速350公里'限定语的完整官方定调，杜绝泛化的'世界首条智能铁路'表述。"
+      "usage": "中华人民共和国交通运输部官方公报《交通运输部：京张高铁是世界首条时速350公里的智能化高速铁路》（2025-03-05）：权威定调京张高铁为'世界上第一条时速350公里的智能化高速铁路'。本方案严格采用带'时速350公里'限定语的完整官方定调，杜绝泛化的'世界首条智能铁路'表述。"
     },
     {
       "id": "AUTHORITY-ZHANTIANYOU",
-      "url": "https://www.cast.org.cn/",
+      "url": "https://www.cast.org.cn/art/2022/5/30/art_1495_189674.html",
       "source_type": "official_public",
       "accessed_date": "2026-08-31",
-      "usage": "中国科学技术协会/中国科学家精神展厅及中国铁道博物馆官方史料：核定詹天佑先生1914年在汉口欧美同学恳亲会演说中'各出所学，各尽所知，使国家富强，不受外侮，足以自立于地球之上'的原始出处与爱国工程师精神核心。"
+      "usage": "中国科学技术协会官方科学家精神专栏《詹天佑：各出所学 各尽所知，足以自立于地球之上》（2022-05-30）：核定詹天佑先生1914年在汉口欧美同学恳亲会演说中'各出所学，各尽所知，使国家富强，不受外侮，足以自立于地球之上'的原始出处与爱国工程师自强精神。"
     },
     {
       "id": "AUTHORITY-JINGZHANG-1909",
-      "url": "http://www.china-railway.com.cn/",
+      "url": "http://www.china-railway.com.cn/gtdt/gtyx/201912/t20191230_101294.html",
       "source_type": "official_public",
       "accessed_date": "2026-08-31",
-      "usage": "中国国家铁路集团与中国铁道博物馆官方档案：核定京张铁路为中国人自行勘测、设计、施工的首条干线铁路；核定1909年10月2日南口通车典礼、9月24日全线开行客车历史时间线。"
+      "usage": "中国国家铁路集团官方历史文献《从京张铁路到京张高铁：百年跨越》（2019-12-30）：核定京张铁路为中国人自行勘测、设计、施工的首条干线铁路；核定1909年10月2日南口通车典礼、9月24日全线开行客车历史时间线。"
     },
     {
       "id": "HERITAGE-LIST-11TH",
@@ -83,7 +83,7 @@
       "url": "https://wwj.beijing.gov.cn/bjww/362771/362782/743928533/743928716/index.html",
       "source_type": "official_public",
       "accessed_date": "2026-08-15",
-      "usage": "北京市文物局'第十一批划定文保单位'详情页：平绥西直门车站旧址（创新带南端北京北站）。保护范围分6个子区（站房/过街天桥/电务段信号工房/扳道房/机务段房群/车库墙体遗存/碉堡），建设控制地带分Ⅰ、Ⅲ、Ⅴ三类。注意：保护区划2004年已随京政发〔2004〕18号发布，本次因附属建筑群并入而重新划定，引用须用第十一批版本。多子区结构，应生成MultiPolygon。"
+      "usage": "北京市文物局'第十一批划定文保单位'详情页：平绥西直门车站旧址（创新带南端北京北站）。保护范围分6个子区（站房/过街天桥/电务段信号工房/扳道房/机务段房群/车库墙体遗存/碉堡），建设控制地带分Ⅰ、Ⅲ、Ⅴ三类。多子区结构，用于constraints.geojson CONS-001。"
     },
     {
       "id": "HERITAGE-DAZHONGSI",
@@ -104,14 +104,7 @@
       "url": "https://github.com/open-city-ai/haidian/issues/2549",
       "source_type": "community_open_contribution",
       "accessed_date": "2026-08-31",
-      "usage": "服务等价基准（Service Equivalence Baseline, SEB）v0.5.0 规范与桌面校验器（Issue #2549，由 lqqk7 开放贡献，CC BY-SA 4.0）。用于本方案 7 项 AI 场景治理与安全联锁机器验证套件（visual/assets/seb-spec.json, seb-tabletop-run.js）。"
-    },
-    {
-      "id": "FONT-NOTOSANSSC-OFL",
-      "url": "https://fonts.google.com/noto/specimen/Noto+Sans+SC",
-      "source_type": "open_source_asset",
-      "accessed_date": "2026-08-31",
-      "usage": "随包中文字体子集（Noto Sans SC，SIL Open Font License 1.1），以 WOFF2 data URI 内嵌于 visual/assets/fonts/notosanssc-subset.css，确保在无中文系统字体的纯离线评审沙盒容器中正常渲染，避免缺字方框（tofu）。"
+      "usage": "服务等价基准（Service Equivalence Baseline, SEB）v0.5.0 规范与桌面校验器（Issue #2549，由 lqqk7 开放贡献，CC BY-SA 4.0）。用于本方案参与者自报的 7 项 AI 场景治理与安全联锁桌面自检推演（visual/assets/seb-spec.json, seb-tabletop-run.js，未获第三方认证）。"
     }
   ]
 }
