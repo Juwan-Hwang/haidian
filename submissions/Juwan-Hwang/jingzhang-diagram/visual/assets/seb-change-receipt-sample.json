@@ -1,5 +1,5 @@
 {
- "receipt_file_id": "seb-change-receipt-v05",
+ "receipt_file_id": "seb-change-receipt-sample",
  "receipt_schema_id": "seb-change-receipt",
  "receipt_schema_version": "0.3.0",
  "schema_ref": "visual/assets/seb-change-receipt-sample.json",
@@ -87,7 +87,7 @@
     "en": "Diff the current spec against the seb-spec-v0.4.0.json snapshot to confirm the sixth component is purely additive and no word of the existing five changed; run node seb-tabletop-run.js inside visual/assets, expecting exit 0 and matching expectation at 60 / 60; run node seb-op04-chain-run.js, expecting exit 0 with zero disagreeing figures and no change at all to that implementation file in this version (an empty git diff); check each of the ten injected fixtures for agreement between its expected_reasons and the pause_threshold of the corresponding risk in risk.json; and verify the snapshot hash with shasum -a 256 visual/assets/seb-spec-v0.4.0.json, which should read efc58de8c327100be67e12b4bdf5b710c3b4cd061ed16d00cb1d980f78f5ddfb."
    },
    "posting": [
-    "visual/assets/seb-change-receipt-v05.json",
+    "visual/assets/seb-change-receipt-sample.json",
     "visual/assets/seb-spec.json 的 revision_history 与 version_snapshots",
     "proposal.md 与 proposal.en.md 的服务等价基准章 / the SEB chapter of proposal.md and proposal.en.md"
    ],
@@ -208,7 +208,7 @@
     "en": "Run three commands in turn inside visual/assets. node seb-tabletop-run.js should exit 0 with a summary reading 62 of 62 matching expectation, 23 accepted and 39 rejected, and a line reporting the declared item count as 62 declared against 62 run. node seb-op04-chain-run.js should exit 0 with 4 of 4 claims and zero disagreeing figures, its excerpt of the prerequisite checker reading 62 of 62. node seb-crosscheck-run.js should exit 0 with no failing assertion, group [B] reporting 40 emittable codes for the tabletop checker, 23 for the chain replay and 40 registered codes, and group [C] returning equal exit codes from both implementations on each of the five mutations. That the baseline did not change can be checked with an empty git diff on seb-spec.json, or by comparing shasum -a 256 against the digest registered in manifest.json. The pre-fix behaviour of the nine failed samples is reproducible by a third party on a read-only copy of the package: apply the mutation described in each entry and run the corresponding checker, where the pre-fix exit code matches what is recorded here and the post-fix code matches the new one recorded; of the sixteen mutations that exited 0 before the fix, none exits 0 after it. The three readings registered here must equal item for item the current reading of gate PG-10 in package-integrity-gates.json; where they do not, the later of the two remeasurement timestamps governs and the source of the difference is to be traced."
    },
    "posting": [
-    "visual/assets/seb-change-receipt-v05.json",
+    "visual/assets/seb-change-receipt-sample.json",
     "visual/assets/package-integrity-gates.json 的 PG-10 闸门（当前读数、复核脚本与复现命令）",
     "changelog.md v9.5 条目",
     "proposal.md 与 proposal.en.md 的桌面配对试点档案章运行输出摘录",

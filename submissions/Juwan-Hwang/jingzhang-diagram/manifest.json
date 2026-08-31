@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "622ab3db40cac6b968b95c7b8ea45dc772d6b09ed0cc7191f1cd14b84a3b1ed2"
+      "sha256": "3f01953af41a7e1239b29db53bd85016fbc45e05d5b6dc42ede6d78c9c20cbbe"
     },
     {
       "path": "compliance_matrix.json",

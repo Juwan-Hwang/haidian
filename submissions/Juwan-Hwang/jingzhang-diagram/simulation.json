@@ -120,7 +120,7 @@
       "audit_completeness": 0.9,
       "replan_p95_seconds": 5.8,
       "high_risk_intercept_rate": null,
-      "high_risk_metric_note": "not_applicable: 本任务清单未包含高风险拦截用例"
+      "high_risk_metric_note": "not_applicable: 本任务清单 SIM-001~SIM-010 为常规慢行与运营调度场景（SIM-010 为噪音与合规受控拦截），未包含涉及生命安全的高风险特种拦截用例"
     },
     "ai_off_equivalent": {
       "status": "validated_offline_synthetic",

@@ -17,8 +17,8 @@
     "安全员",
     "辅导员"
   ],
-  "disclaimer_zh": "本文件是桌面推演样例，不是测试记录。将京张运行图方案的十二张场景卡映射为 SEB 节点，检验联锁制四条硬接线是否可通过 SEB v0.3 判据的逐条校验。样例中没有任何参与者、任何现场、任何计数或比例；运行本文件不产生绩效指标数值。",
-  "disclaimer_en": "This file holds tabletop fixtures, not test records. The twelve scenario cards of the Jingzhang Diagram proposal are mapped to SEB nodes to test whether the four hardwired interlock constraints pass SEB v0.3 item-by-item. No participant, no site, no count and no ratio; running it produces no performance metric value.",
+  "disclaimer_zh": "本文件是桌面推演样例，不是测试记录。将京张运行图方案的 7 条代表性场景样例映射为 SEB 节点，检验联锁制硬接线是否可通过 SEB v0.5.0 判据的逐条校验。样例中没有任何参与者、任何现场、任何计数或比例；运行本文件不产生绩效指标数值。",
+  "disclaimer_en": "This file holds tabletop fixtures, not test records. Seven representative scenario fixtures of the Jingzhang Diagram proposal are mapped to SEB nodes to test whether the hardwired interlock constraints pass SEB v0.5.0 item-by-item. No participant, no site, no count and no ratio; running it produces no performance metric value.",
   "verdict_semantics": {
     "accept": "四个基准组件逐项通过，该样例可以进入下一步；不表示服务已达标。",
     "reject": "至少一个基准组件被违反，该样例在桌面阶段即被拒绝，理由逐条给出。"

@@ -68,7 +68,7 @@
  *   退出码 1 只承载「判定与期望不一致」一件事：解析失败与结构缺失自 v9.5 起一律
  *   落在退出码 2，此前两者混用同一个码（审计缺陷 S2-1/S2-2/S3-5）。
  *   Exit code 1 carries one meaning only — a verdict disagreeing with its expectation.
- *   From v9.5 parse failures and structural gaps all land on exit code 2; previously the
+ *   From v0.5.0 parse failures and structural gaps all land on exit code 2; previously the
  *   two shared one code (audit findings S2-1, S2-2 and S3-5).
  */
 
