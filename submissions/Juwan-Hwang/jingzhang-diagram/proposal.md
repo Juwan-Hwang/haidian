@@ -97,7 +97,7 @@ scenarios:
 
 ### 核心命题：一座按图行车的城市
 
-这块地真正不可复制的是同一走廊上的三次"世界第一/第一"叠印 [source:OFFICIAL-ANNOUNCEMENT]：1909 自主——首条由中国人自行设计建造的干线铁路，詹天佑面对 33‰ 坡度以人字形折返线回应用拓扑换坡度、用折返换可逆；1980s 创业——中关村电子一条街，中国市场化科技创新的原点；2019 智能——世界首条时速350公里的智能化高速铁路 [source:AUTHORITY-MOT-HSR]，实现 350 公里级自动驾驶与北斗应用（据交通运输部部长 2025 年全国两会表述 [source:AUTHORITY-MOT-2025]）；2026 共生——方案概念探索与设计主张：探索人与智能共生爬升的城市操作系统。**京张基因里本就有"自动驾驶的铁路"**——这是此前所有方案都漏掉的关键锚点。詹天佑"各出所学，各尽所知"出自 1914 年汉口欧美同学恳亲会演说，原文为"各出所学，各尽所知，使国家富强，不受外侮，足以自立于地球之上" [source:BAIKE-ZHANTIANYOU]；这是 1914 年——京张铁路建成五年后——写下的开源宣言，本方案把它立为精神宪法 [depth:overall_spatial_structure] [assumption:A-FACT-ZHANTIANYOU-001] [assumption:A-FACT-SMART-HSR-2019-002]。
+这块地真正不可复制的是同一走廊上的三次"世界第一/第一"叠印 [source:OFFICIAL-ANNOUNCEMENT]：1909 自主——首条由中国人自行设计建造的干线铁路，詹天佑面对 33‰ 坡度以人字形折返线回应用拓扑换坡度、用折返换可逆；1980s 创业——中关村电子一条街，中国市场化科技创新的原点；2019 智能——世界首条时速350公里的智能化高速铁路 [source:AUTHORITY-MOT-HSR]，实现 350 公里级自动驾驶与北斗应用（据交通运输部部长 2025 年全国两会表述 [source:AUTHORITY-MOT-HSR]）；2026 共生——方案概念探索与设计主张：探索人与智能共生爬升的城市操作系统。**京张基因里本就有"自动驾驶的铁路"**——这是此前所有方案都漏掉的关键锚点。詹天佑"各出所学，各尽所知"出自 1914 年汉口欧美同学恳亲会演说，原文为"各出所学，各尽所知，使国家富强，不受外侮，足以自立于地球之上" [source:AUTHORITY-ZHANTIANYOU]；这是 1914 年——京张铁路建成五年后——写下的开源宣言，本方案把它立为精神宪法 [depth:overall_spatial_structure] [assumption:A-FACT-ZHANTIANYOU-001] [assumption:A-FACT-SMART-HSR-2019-002]。
 
 ### 元概念：运行图——铁路的总谱
 
@@ -363,7 +363,7 @@ AI Urban Performance Index：Innovation Loop Latency / 场景可达性 / 实验�
 
 1. **法定边界**：本方案所有空间落地建议均为概念建议、参考方案或可供专业团队深化研究，不替代正式规划，不构成政府审定结论 [depth:risk_missing_data] [self_check:DETERMINISTIC_VALIDATION]。
 2. **数据边界**：官方精确边界 polygon、控规指标、现状测绘、土地权属、市政管线与文保测绘均未公开获得；凡涉及容积率、高度、拆改留结论、道路线位与投资测算一律列为待确认 [data:geometry/constraints.geojson]。场地内两处核心文保单位（清华园车站旧址、觉生寺/大钟寺）的法定名录与文字四至已据公开权威来源核定（京政发〔2025〕3号、北京市文物局详情页），但官方图纸未随文公开；constraints.geojson 中 HERITAGE_PROTECTION 图层标 `provisional_constraint`，不标 `official_constraint` [assumption:A-CONTROLS-002] [source:HERITAGE-LIST-11TH] [source:HERITAGE-QINGHUAYUAN]。
-3. **事实风险**：詹天佑"各出所学，各尽所知"题词（1914 年汉口欧美同学恳亲会演说）、京张高铁"世界首条时速350公里的智能化高速铁路 [source:AUTHORITY-MOT-HSR]"表述（交通运输部部长 2025 年全国两会表述）、京张铁路通车纪念日（1909 年 10 月 2 日南口通车典礼；全线开行列车为 9 月 24 日）等史实已据公开权威来源核定，详见 assumptions.json [source:BAIKE-ZHANTIANYOU] [source:AUTHORITY-MOT-2025]。
+3. **事实风险**：詹天佑"各出所学，各尽所知"题词（1914 年汉口欧美同学恳亲会演说）、京张高铁"世界首条时速350公里的智能化高速铁路 [source:AUTHORITY-MOT-HSR]"表述（交通运输部部长 2025 年全国两会表述）、京张铁路通车纪念日（1909 年 10 月 2 日南口通车典礼；全线开行列车为 9 月 24 日）等史实已据公开权威来源核定，详见 assumptions.json [source:AUTHORITY-ZHANTIANYOU] [source:AUTHORITY-MOT-HSR]。
 4. **技术风险**：自动驾驶、机器人、算力耦合等场景均设为限速限区可逆试验，保留人类最终决定权与退出预案。
 5. **社会风险**：遗产活化可能带来绅士化压力——以社区嵌入计划、原地居民荣誉体系与公共服务增量对冲（借鉴高线公园教训）。
 6. **治理风险**：监管机构被利益俘获的风险——以独立审计、开源优先、公开约束手册与拒绝凭证公开制度对冲。
