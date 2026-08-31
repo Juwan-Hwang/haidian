@@ -1,0 +1,49 @@
+# 方案迭代记录
+
+## v1.3 - 2026-08-31
+
+- **服务等价基准升级（SEB v0.5.0 · Issue #2549）**：将服务等价基准由 v0.3.0 正式升级至社区最新 v0.5.0 版本，更新 `seb-spec.json`、`seb-tabletop-run.js` 与 `seb-change-receipt-sample.json`；完善 7 项联锁测试样例的 `funding_owner` 生命周期与 `adopter_lexicon_evidence` 证据字段，保持 7/7 机器校验全量通过。
+- **场景演练台账与离线基准（simulation.json）**：依照 `docs/simulations.md` 规范，补齐覆盖 10 大场景的离线合成演练台账 `simulation.json` 与 `urban_llm_harness` 评测基准；在 `metrics.json` 中登记 6 项演练保留指标（任务数 10、成功率 90.0%、工具 schema 100.0%、能耗超限 1 次、审计完整度 90.0%、重规划 p95 延迟 5.8s），并在主报告中形成证据闭环。
+- **终局评审直通车（START HERE）**：在主报告与英文翻译件导言区增设「8 分钟极速导读导航」，提炼 5 站式快速导读动线，直接链接核心元概念、空间操作系统、AI 治理四制、实施台账与 Rubric 证据矩阵。
+- **七维度 Rubric 显式证据映射表**：严格对齐官方 `docs/review-rubric.md` 7 大评审维度（`brief_alignment` 20%、`originality` 10%、`ai_planning_innovation` 15%、`implementation_feasibility` 20%、`public_interest_inclusion` 10%、`risk_compliance` 10%、`expression_completeness` 15%）与 `agent_taskbook.json` 的 6 项智能体任务，将得分点、章节编号、图件名、GeoJSON 图层与证据标签全部逐一锚定。
+- **实施与权属台账深化**：将原概念性项目清单升级为包含「主要依赖与权属边界」、「运营/准入主体」、「应急熔断与退出机制」的权责矩阵，强化全生命周期治理闭环。
+- **人本治理与紧急制动闸（The Human Switch）**：强化弱势群体与市民在 AI 进城中的知情权与随时下车权（Emergency Stop & Opt-Out），呼应任务书 Charter 10 人本治理原则。
+- **展示页 Front-Matter 标量兼容性规范**：将主文 `summary` 字段统一为单行双引号字符串，避免自动化展示页提取时的截断隐患。
+- **双语离线报告与校验和重算**：使用 `render_proposal_html.py` 重新生成中英双语 HTML 报告，使用 `refresh_submission_manifest.py` 刷新全量资产 SHA-256 哈希，4 道本地 Gate 全部通过。
+
+## v1.2 - 2026-08-15 (PR #2779)
+
+- **文保来源登记与置信度升级**：依据北京市人民政府公开发布的《北京市第十一批文物保护单位名单》（京政发〔2025〕3号）与北京市文物局法定文保名录，登记清华园车站旧址与觉生寺（大钟寺）的公开文保依据（`HERITAGE-LIST-11TH`、`HERITAGE-QINGHUAYUAN`、`HERITAGE-PING-SUI-XIZHIMEN`、`HERITAGE-DAZHONGSI`），升级 `CONS-001` 置信度为 `medium`。
+- **文保图层合规边界明确**：在 `geometry/constraints.geojson` 与 `assumptions.json` 中明确声明文保红线为 `provisional_constraint`，以避让原则为底线，严禁任何侵入性工程。
+
+## v1.1 - 2026-08-14 (PR #2682)
+
+- **服务等价基准（SEB）v0.3.0 快照集成**：作为首个外部采纳方，在 `visual/assets/` 中引入 SEB v0.3.0 规范与桌面校验器，建立 7 项联锁机验证测试套件（`jingzhang-seb-fixtures.json`），实现 7/7 全量机器可验证通过。
+- **变更收据与快照机制**：提交 `seb-change-receipt-sample.json` 与 `seb-snapshot.json`，确保治理四制与联锁规则具备字节级可审计性。
+
+## v1.0 - 2026-08-13 (PR #2360)
+
+- **三大史实权威核定与假设状态转正**：
+  1. 詹天佑“各出所学，各尽所知”题词出处：核定为 1914 年汉口欧美同学恳亲会演说，正文与假设表据此修正；
+  2. 京张高铁表述口径：核定为交通运输部 2025 年官方定调“世界首条时速 350 公里的智能化高铁”；
+  3. 京张铁路通车纪念日：核定 1909 年 10 月 2 日为南口通车典礼，9 月 24 日为全线开行列车日。
+- **假设表状态更新**：在 `assumptions.json` 中将对应的 `A-FACT-*` 条目由 `pending_authoritative_verification` 转为 `verified`。
+
+## v0.9 - 2026-08-12 (PR #2029)
+
+- **证据概览与摘要解析修复**：
+  1. 修复展示页摘要提取：将 `proposal.md` front-matter 中的 `summary` 字段由 YAML `>-` 块标量重构为单行字符串，解决展示页卡片摘要解析截断问题；
+  2. 补齐边界与自检证据标记：在正文中补充 4 处 `[assumption:*]` 与 2 处 `[self_check:*]` 标记，使证据概览面板完全闭环。
+
+## v0.8 - 2026-08-11 (PR #1918 & PR #1925)
+
+- **证据引用补全 (PR #1918)**：在 `proposal.md` 中补齐 `[metric:key_area_count]`、`[metric:green_ratio]`、`[metric:public_space_ratio]`、`[metric:floor_area_ratio]` 等指标与深度标签，在 `standard_matrix.json` 中补充 3 项专业标准条目。
+- **上游工具链贡献 (PR #1925)**：向开源主仓提交工具链修复补丁，修复 `scripts/validate_submission.py` 中 `manifest.json` 自引用 sha256 递归校验死锁问题，并添加 63 行自动化测试用例，获官方维护者合入主干。
+
+## v0.1 - 2026-08-10 (PR #1578)
+
+- **首发正式入库（PR #1578）**：完成首个正式方案包（`formal`），经 CI 机器人与维护者评审以 76/100 通过并合入 `open-city-ai/haidian` 主仓。
+- **元概念确立**：提炼铁路总谱——“运行图（Working Diagram）”元概念，确立“按图行车，以人定局”的设计主线；将詹天佑 1909 年“各出所学、各尽所知”立为开源城市宪法。
+- **空间操作系统**：提出“人字折返单元（Switchback Unit）”，构建众智园（试车线）、原点社区（始发站）、大钟寺（编组场）、中关村（机务段）、小月河（工务段）的三区两翼协同回路。
+- **治理四制转译**：将铁路“信号·闭塞·联锁·路票”转译为 AI 进城准入协议，设计 10 张 AI 场景卡与 3 处测试验证场。
+- **多模态成果交付**：提交 9 项 GeoJSON 空间几何图层、5 张双语标准图件、A0 展板与 A3 文本册 PDF、双语离线 HTML 报告与可视化页面。

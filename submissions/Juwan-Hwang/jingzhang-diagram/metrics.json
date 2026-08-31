@@ -81,6 +81,84 @@
       "formula": "count(key_detailed_design_areas)",
       "confidence": "high",
       "assumptions": []
+    },
+    "simulation_task_count": {
+      "status": "known",
+      "value": 10,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(simulation.tasks)",
+      "confidence": "high",
+      "assumptions": [
+        "基于 simulation.json 离线合成演练台账的 10 项任务记录统计。"
+      ]
+    },
+    "simulation_success_rate": {
+      "status": "known",
+      "value": 0.9,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "successful_tasks / total_tasks",
+      "confidence": "high",
+      "assumptions": [
+        "9/10 任务成功（含 1 项重规划成功，1 项越界拦截失败）。"
+      ]
+    },
+    "tool_schema_pass_rate": {
+      "status": "known",
+      "value": 1.0,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "valid_schema_tasks / total_tasks",
+      "confidence": "high",
+      "assumptions": [
+        "10/10 任务调度符合结构化协议格式。"
+      ]
+    },
+    "energy_budget_violations": {
+      "status": "known",
+      "value": 1,
+      "unit": "count",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "count(energy_used_kwh > energy_budget_kwh)",
+      "confidence": "high",
+      "assumptions": [
+        "SIM-004 恶劣天气测试中发生 1 次能耗超预算读数。"
+      ]
+    },
+    "audit_completeness": {
+      "status": "known",
+      "value": 0.9,
+      "unit": "ratio",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "audited_tasks / total_tasks",
+      "confidence": "high",
+      "assumptions": [
+        "9/10 任务完成全流程审计闭环，SIM-007 存在 1 处离线数据待人工复核。"
+      ]
+    },
+    "replan_p95_seconds": {
+      "status": "known",
+      "value": 5.8,
+      "unit": "seconds",
+      "source_files": [
+        "simulation.json"
+      ],
+      "formula": "p95(replan_seconds)",
+      "confidence": "high",
+      "assumptions": [
+        "任务重规划 p95 延迟为 5.8 秒。"
+      ]
     }
   }
 }

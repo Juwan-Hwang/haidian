@@ -89,6 +89,13 @@
       "source_type": "official_public",
       "accessed_date": "2026-08-15",
       "usage": "《北京市文物保护单位保护范围及建设控制地带管理规定》。建设控制地带Ⅰ–Ⅴ类的分类含义与管控要求的法定出处。CONS-001/CONS-002的constraint_type字段须引用本条以解释Ⅰ类/Ⅴ类等分类。"
+    },
+    {
+      "id": "SEB-V0.5",
+      "url": "https://github.com/open-city-ai/haidian/issues/2549",
+      "source_type": "community_open_contribution",
+      "accessed_date": "2026-08-31",
+      "usage": "服务等价基准（Service Equivalence Baseline, SEB）v0.5.0 规范与桌面校验器（Issue #2549，由 lqqk7 开放贡献，CC BY-SA 4.0）。用于本方案 7 项 AI 场景治理与安全联锁机器验证套件（visual/assets/seb-spec.json, seb-tabletop-run.js）。"
     }
   ]
 }
