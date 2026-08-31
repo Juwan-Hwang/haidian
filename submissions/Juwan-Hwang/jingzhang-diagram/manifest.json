@@ -26,7 +26,7 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "3577ba6e748de5a21c665d205a8e46b9307e3add11e4445ab93df4feb6552543"
+      "sha256": "ca30111534ccca342be1f044d3e53d8d85cd3d9c19c5282a9c6a1ac8499bfa12"
     },
     {
       "path": "agent.json",
@@ -38,25 +38,25 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "60c02b7fc2f2e40c74372e789c9afee7253dae6f477d2d42688ad14ef65fe9c5"
+      "sha256": "33b536d8098ac117db061ddbc3729e589a2481e7bde9498a1ee8131c21dec711"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "e2f2acfff5128a56fe8e4272bc6c32445227460213171b8ee15925f308b67abd"
+      "sha256": "6e7b29ba102069fd11a18596c9edff72e2fea834772cc118de950867d6bf557d"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "ece61d65f2b4efd8c286717aedea35d158ce1f70adf6ef434ae7ac17c424c898"
+      "sha256": "4fd98a725bd88c3eb67da8ef933d7a0e3ea4a4f8a65a9ca1ec30481e6ac69666"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "fec20ffb568996451b7eec1baee12dde591600e6be2a61300a34f0a94ad3d97b"
+      "sha256": "2f2f2e38c78303d9057f9542275de77abbd17affb73cc4e634208b52e358f31d"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "2dec228e3d1a1f0631ffdbf69ddda82394f324fac17812a55dff7aad5bec7177"
+      "sha256": "50850ae671a71f3bc17c810517c91888280f26835cbc434e39218ade6cf3ceb5"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "ac8929a08516047380c241994c18f3ba107e198ab2ffdc74a24c7ee427b8a095"
+      "sha256": "1fb21be58187578e94fc64a198944170b936538b5ad634d77f93dc88857d05ff"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "b758c29a45b107e04372900cad6cda1da8289df42835d65180027cd3144e8a2a"
+      "sha256": "a0387e62cd9dbe855f76fb889a96b028c1ccad01ca56323df8bdb6e544a20cfa"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -211,7 +211,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4459b95d4bab805fd4385e36a114c286582b52c929f6ce9111f7a70df486bf32"
+      "sha256": "0a5168727b36ea002768403360f2dc7dc7eef856500ee7ff4cc7bae423db4b7d"
     },
     {
       "path": "report/proposal.en.html",
@@ -219,7 +219,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "87e97f6e303836eb9e99d625d8bdba983681c16ae14f3ef917dc74a7b57c6a53"
+      "sha256": "d9026710c6f80edc696f1137a1e1340eee35c5b3c29f0053dfb5d4688c3bae72"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -243,7 +243,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "221da841c0b355a49d62a27ea3fe1ef453411433eb7e4ab5bf3493d8ea82cc76"
+      "sha256": "424019679d522d8fdbb3c6cad1a1d786068188e6cb1619a0c9e61e29afd7dffb"
     },
     {
       "path": "assets/figures/key-areas.en.png",
@@ -284,6 +284,17 @@
       "language": "en",
       "translation_of": "assets/figures/site-overview.png",
       "sha256": "7af6589ff4950edf6066aa925eccb041009fde44781b8fc719ee8ac8b5b8001c"
+    },
+    {
+      "path": "visual/assets/fonts/notosanssc-subset.css",
+      "role": "visualization",
+      "required": false,
+      "language": "neutral",
+      "sha256": "383ace0279276d0f29d064dfb31de2b1904a081a97324dc72fcb7416effea6ed",
+      "title_zh": "随包中文字体子集（Noto Sans SC，SIL OFL 1.1）",
+      "title_en": "Bundled Chinese font subset (Noto Sans SC, SIL OFL 1.1)",
+      "description_zh": "供离线评审环境加载以避免中文缺字方框的 Noto Sans SC 字体子集样式表。",
+      "description_en": "Subsetted Noto Sans SC font stylesheet embedded as WOFF2 data URI to avoid tofu in offline containers."
     }
   ],
   "validation_claim": {
