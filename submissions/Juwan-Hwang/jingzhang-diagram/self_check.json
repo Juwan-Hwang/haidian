@@ -59,6 +59,7 @@
         "submissions/Juwan-Hwang/jingzhang-diagram/simulation.json",
         "submissions/Juwan-Hwang/jingzhang-diagram/sources.json",
         "submissions/Juwan-Hwang/jingzhang-diagram/standard_matrix.json",
+        "submissions/Juwan-Hwang/jingzhang-diagram/visual/assets/fonts/notosanssc-subset.css",
         "submissions/Juwan-Hwang/jingzhang-diagram/visual/assets/jingzhang-seb-fixtures.json",
         "submissions/Juwan-Hwang/jingzhang-diagram/visual/assets/seb-change-receipt-sample.json",
         "submissions/Juwan-Hwang/jingzhang-diagram/visual/assets/seb-snapshot.json",
@@ -70,7 +71,7 @@
       "ai_package_stages": {
         "submissions/Juwan-Hwang/jingzhang-diagram": "formal"
       },
-      "total_bytes": 6860540,
+      "total_bytes": 6165892,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -149,7 +150,7 @@
         "proposal_format_version": "2",
         "evidence_contract": "section-anchors-plus-structured-audit",
         "proposal_reference_counts": {
-          "source": 12,
+          "source": 13,
           "standard": 8,
           "depth": 15,
           "data": 19,

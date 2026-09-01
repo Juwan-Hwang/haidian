@@ -36,7 +36,7 @@ scenarios:
 
 1. **第 1 站 · 元概念与开源宪法（§1）**：从 1909 年詹天佑“人字线”与“各出所学、各尽所知”出发，把铁路总谱——“运行图（时空·权限·节律·准点率）”转译为现代开源城市操作系统。
 2. **第 2 站 · 空间操作系统与三区两翼（§2）**：折返单元（Switchback Unit = 空间穿越 + 闭塞区间 + 叙事原点 + 运营路票）；众智园（试车线）、原点社区（始发站）、大钟寺（编组场）、中关村（机务段）、小月河（工务段）形成闭环协同回路 [data:geometry/key_areas.geojson]。
-3. **第 3 站 · 治理四制与场景卡（§3）**：将铁路“信号·闭塞·联锁·路票”完整转译为 AI 进城准入协议；10 张高辨识度 AI 场景卡、3 个测试场、5 类用户画像，人本治理中市民永远握有“紧急制动闸与下车权”。
+3. **第 3 站 · 治理四制与场景卡（§3）**：将铁路“信号·闭塞·联锁·路票”完整转译为 AI 进城准入协议；12 张高辨识度 AI 场景卡、4 个产业测试验证场、6 类用户画像，人本治理以“公众告警—授权急停—专业恢复”三级安全接口保障市民随时下车权（§治理协议·人本制动闸）。
 4. **第 4 站 · 实施台账与 KPI 度量（§4）**：铺轨→通车→提速→成网四阶段路径；以创新回路延迟（ILL）与运行图准点率考核行政与落地效能；场景准入、审计与退出机制全生命周期闭环。
 5. **第 5 站 · 证据矩阵与合规速查（§7）**：查阅文末《七维度 Rubric 显式证据映射表》，100% 覆盖官方 7 大评审维度与 6 项 Agent 必选任务。
 
@@ -48,7 +48,7 @@ scenarios:
 
 **统一纪律（硬约束）**：本方案全部空间落地建议均为概念建议、参考方案或可供专业团队深化研究；不冒充法定控制线，不虚构容积率/建筑高度/密度/绿地率，不虚构企业、投资额、产值、政策承诺或工程可行性。官方精确边界（SITE_BOUNDARY / KEY_AREA polygon）、控规指标与现状数据目前缺失，本方案基于官方文本四至与面积数据展开概念设计，正式打包阶段采用仓库临时边界并显著标注 `provisional`，承诺按 EPSG:4548 复算 [source:BOUNDARY-SOURCE] [source:KEY-AREA-SOURCE] [assumption:A-CONTROLS-001]。
 
-资料登记表的使用边界如下 [source:SOURCE-REGISTRY]：`data/source_registry.json` 登记公开、清权与临时资料的用途边界；当前登记摘要为 formal 可用资料、背景资料与 provisional-only 资料三类。agent 不得把 background_only 或 provisional_only 资料升级为 official boundary、法定控规、正式评分依据或政府实施承诺。`data/processed/agent_fact_pack.md` 是本方案的阅读导航层，不是新的权威来源 [source:PROCESSED-FACT-PACK]。
+资料登记表的使用边界如下 [source:SOURCE-REGISTRY]：`data/source_registry.json` 登记公开、清权与临时资料的用途边界；本投稿的来源清单以包内 `sources.json` 逐条列明，其正式可用性以仓库登记审查（registry review）结论为准——当前登记摘要尚未收录本投稿条目，本方案不据此主张任何资料已完成正式清权。agent 不得把 background_only 或 provisional_only 资料升级为 official boundary、法定控规、正式评分依据或政府实施承诺。`data/processed/agent_fact_pack.md` 是本方案的阅读导航层，不是新的权威来源 [source:PROCESSED-FACT-PACK]。
 
 ![方案总览：运行图元概念与四次"第一"叠印](assets/figures/site-overview.png)
 
@@ -91,7 +91,7 @@ scenarios:
 
 传播语：中文"**按图行车，以人定局**"；英文"**Every intelligence runs on schedule. Every person holds the switch.**"；文化金句"1909 年，京张铁路用一张运行图调度列车；今天，京张创新带用一张运行图调度智能。"
 
-视觉识别（概念方向，全部自绘清权）：标志取**运行图的时空网格**——横轴为线、纵轴为时，一条折返斜线穿过网格，既是人字也是列车运行线；色彩为京张铁锈红（历史）、智能青（连接）、信号翠（运行/通过状态）、纸白（公共透明），不使用赛博朋克霓虹；字体方向为思源黑体（中文）/ Inter（公共信息）/ IBM Plex Mono（版本与导视细节）。文化导视系统与全带 Logo 系统同源且分层，不与 Logo 混淆 [source:AGENT-TASKBOOK]。"人字"图形 IP 以开源授权（非商业公共用途）释放，使品牌像铁路一样成为公共基础设施 [depth:overall_spatial_structure]。
+视觉识别（概念方向，全部自绘并随包交付，许可见 `report/copyright_statement.md`）：标志取**运行图的时空网格**——横轴为线、纵轴为时，一条折返斜线穿过网格，既是人字也是列车运行线；色彩为京张铁锈红（历史）、智能青（连接）、信号翠（运行/通过状态）、纸白（公共透明），不使用赛博朋克霓虹；字体方向为思源黑体（中文）/ Inter（公共信息）/ IBM Plex Mono（版本与导视细节）。文化导视系统与全带 Logo 系统同源且分层，不与 Logo 混淆 [source:AGENT-TASKBOOK]。"人字"图形 IP 随投稿包以 COMMUNITY-DISPLAY-ONLY 展示许可发布（非商业公开展示与学术交流），使品牌像铁路一样成为公共基础设施 [depth:overall_spatial_structure]。
 
 ## 总体设计范围城市更新与控规深度城市设计
 
@@ -210,7 +210,7 @@ AI 研究者（算力、场景、同行 → 试车线测试场、原点礼堂发
 3. **无退出不部署**：上线必须同步上线"撤销—隔离—还原"三位一体退出方案，撤销命令优先级不低于部署命令；
 4. **无审计不扩大**：从试验到规模化必须经过独立"人字审计"逐项勾选（类比列车出库检查）。
 
-> **SEB v0.5.0 机器验证**：上述四条硬接线已用社区贡献的服务等价基准（Service Equivalence Baseline, SEB）v0.5.0 逐条校验。七条桌面推演样例（3 正 4 负）映射为 SEB 节点，覆盖 ai_off_path 禁止依赖、human_handoff 角色词表、分母完整性、停止条件强制四个判据，全部 7/7 通过。SEB 规范、校验器与采用方 fixtures 已快照入包 `visual/assets/`，可复现运行 [source:SEB-V0.5] [self_check:SEB_TABLETOP].
+> **SEB v0.5.0 参与者桌面自检（非第三方认证）**：上述四条硬接线已由投稿方用社区贡献的服务等价基准（Service Equivalence Baseline, SEB）v0.5.0 逐条对照自检。七条合成桌面推演样例（3 正 4 负）映射为 SEB 节点，覆盖 ai_off_path 禁止依赖、human_handoff 角色词表、分母完整性、停止条件强制四个判据，7/7 样例与预期一致（退出码 0）。此为参与者自报的桌面自检结果，未经本评审执行或第三方独立认证，不构成安全性能证明或合规结论。SEB 规范、校验器与采用方 fixtures 已快照入包 `visual/assets/`，第三方可离线复跑核对 [source:SEB-V0.5] [self_check:SEB_TABLETOP].
 
 ### 路票制（公共凭证）
 
@@ -220,9 +220,18 @@ AI 研究者（算力、场景、同行 → 试车线测试场、原点礼堂发
 
 所有场景按公开发布的"时刻表"运行：何时进站、试验多久、何时评审、何时出清，全部按图公示；运行图准点率公开（按计划进站/出清的场景比例），暴露行政拖延；每年发布《京张运行图年报》：ILL 分布（必须公布分布以暴露长尾）、最慢 10% 案例归因、最快 10% 案例机制提取、次年提速承诺 [depth:metrics_recalculation]。
 
+### 人本制动闸（The Human Switch · 分级安全接口）
+
+“让每一个人随时下车”不是把急停按钮无差别交给任何路人——那会把公共安全交给误触与滥用。本方案把停止权设计为与铁路同构的三级接口，权限、动作、留痕与恢复条件逐级定义（概念设计，落地前须完成安全工程论证）：
+
+1. **L1 公众告警（任何人）**：任何市民可在调度大厅公共界面、场景公示牌或城市问题路由提交告警与停止请求；告警即时登记编号并在运行图大屏公示，触发值守复核。公众告警权不设门槛，但不直接驱动设备停机，防止恶意触发造成次生风险。
+2. **L2 现场授权急停（受训授权人员）**：每个在测场景的现场公示牌载明急停点位与授权角色（安全员、驻场人类监督员、社区值班员）；急停采用 3 秒长按 + 双人确认防误触，触发后场景按预案降级（低速场景 50 米内平稳减速停靠并隔离区间），同时在调度大厅产生不可篡改的停机事件记录。
+3. **L3 专业恢复（调度大厅 + 责任主体）**：恢复运行不是按下另一个按钮——须由调度大厅值班员与场景责任自然人共同核对停机原因、现场确认与整改证据，以物理钥匙复位，恢复决定与理由写入路票台账并公示。
+4. **滥用与责任链**：每一次告警、急停与恢复均进入不可篡改审计留痕；恶意触发依据公示的场景准入协议追责，授权人员失职由责任自然人承担（路票制规定责任必须落在自然人）。本条为概念接口设计，不构成现成安全保障的承诺；真实部署前须通过安全、无障碍与公众接受度的专业验证 [standard:GENERATIVE-AI-INTERIM-MEASURES]。
+
 ### 隐私与人工复核总边界
 
-不部署无法人工复核的自动化决策；不以人脸识别作为公共服务前提；个人数据最小化、本地化、授权化；任何场景设"人类停止按钮"；监控类技术不进入本场景体系（红线）；**感知即公共品**：城市感知基础设施默认最小采集、可见用途、随时退出、开放可审计、市民可控 [standard:GENERATIVE-AI-INTERIM-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW]。
+不部署无法人工复核的自动化决策；不以人脸识别作为公共服务前提；个人数据最小化、本地化、授权化；任何场景按上述人本制动闸三级接口配置停止权；监控类技术不进入本场景体系（红线）；**感知即公共品**：城市感知基础设施默认最小采集、可见用途、随时退出、开放可审计、市民可控 [standard:GENERATIVE-AI-INTERIM-MEASURES] [standard:BARRIER-FREE-ENVIRONMENT-LAW]。
 
 ## 用地、建筑规模与拆改留方案
 
@@ -246,7 +255,7 @@ AI 研究者（算力、场景、同行 → 试车线测试场、原点礼堂发
 
 遗址公园（线）× 清河（蓝）× 小月河（廊）× 折返节点公园群（点）；元大都土城等周边历史绿地以慢行串联（概念），不作绿地指标结论 [depth:blue_green_public_space] [data:geometry/green_space.geojson] [metric:green_ratio]。公共空间要素见组件库与场景卡章节 [data:geometry/public_space.geojson] [metric:public_space_ratio]。
 
-### 公共空间组件库（全部开源图纸）
+### 公共空间组件库（图纸随包交付，许可见版权声明）
 
 道岔座椅（可转向拼接）、公里标导视柱、信号色铺装系统、臂板信号式信息发布杆、道砟铭牌（荣誉载体）。组件库即公共知识沉淀，供后续深化与复用。
 
@@ -305,7 +314,7 @@ AI 研究者（算力、场景、同行 → 试车线测试场、原点礼堂发
 | JZ-03 | 原点礼堂（清华园站活化） | 文化/更新 | 文保审批、权属（京政发〔2025〕3号） | 文保单位与高校联合实验室 | 严格遵守文保控制要求，零破坏原结构 |
 | JZ-04 | 众智园清河创新界面 | 蓝绿/产业展示 | 河道蓝线、生态防洪 | 园区运营方与生态水务部门 | 汛期及水体监测超标时自动闭园与断电 |
 | JZ-05 | 大钟寺站四象限步行连通 | 轨道一体/慢行 | 轨道站点、交叉口、市政管线 | 轨道交通与街区更新专班 | 施工期保障地面慢行底线通行权 |
-| JZ-06 | AI Civic Room 网络 | 新基建/公共服务 | 能源、算力、安全、运营主体 | 社区居委会与志愿者 Agent | 市民一键下车/关停麦克风与感知设备 |
+| JZ-06 | AI Civic Room 网络 | 新基建/新公共服务 | 能源、算力、安全、运营主体 | 社区居委会与志愿者 Agent | 市民可随时申请下车/关停麦克风与感知设备，现场授权人员确认后执行并留痕公示 |
 | JZ-07 | 朝圣地标组与道砟铭牌 | 文化/地标 | 文保、公共空间许可、版权清权 | 开源贡献者名录委员会 | 版权或史实有争议时进入 GitHub 仲裁 |
 | JZ-08 | 开发者驻地与学者里弄 | 运营/人才 | 物业协调、签证机制 | 青年人才公寓与高校社群 | 租期届满与入驻评审透明公开退出 |
 | JZ-09 | 社区嵌入计划（适老/托育/夜校） | 公共服务 | 社区协调、运营主体 | 街道民生科与社会组织 | 严禁强制智能识别，全保留人工服务通道 |
@@ -353,10 +362,10 @@ AI Urban Performance Index：Innovation Loop Latency / 场景可达性 / 实验�
 |---|---|---|---|---|
 | **任务书相关性 (20%)** `brief_alignment` | `agent.1`, `agent.2` | 紧扣 43.6 km² 统筹研究范围、11.4 km² 总体设计范围、368.4 ha 三大重点区；精准对应三大定位、五大功能与三区两翼回路 | `site_boundary.geojson`<br>`key_areas.geojson`<br>`assets/figures/site-overview.png` | [source:OFFICIAL-ANNOUNCEMENT]<br>[source:AGENT-TASKBOOK]<br>[depth:three_level_scope_framework] |
 | **原创性 (10%)** `originality` | `agent.1`, `agent.5` | 提出“运行图（Working Diagram）”元概念与“折返单元（Switchback Unit）”空间操作系统；将詹天佑 1909 年“各出所学、各尽所知”确立为开源城市宪法 | `assets/figures/land-use-structure.png`<br>`drawings/a0-boards.pdf` | [depth:overall_spatial_structure]<br>[assumption:A-FACT-OPENING-DATE-003] |
-| **AI与城市规划创新性 (15%)** `ai_planning_innovation` | `agent.2`, `agent.3`, `agent.4` | 铁路安全四制（信号·闭塞·联锁·路票）转译为 AI 进城治理协议；10 张高敏场景卡、3 个产业测试场、5 类用户画像与空间-运营双向映射 | `land_use.geojson`<br>`roads.geojson`<br>`assets/figures/key-areas.png` | [depth:three_key_area_detailed_design]<br>[depth:municipal_new_infrastructure] |
+| **AI与城市规划创新性 (15%)** `ai_planning_innovation` | `agent.2`, `agent.3`, `agent.4` | 铁路安全四制（信号·闭塞·联锁·路票）转译为 AI 进城治理协议；12 张高敏场景卡、4 个产业测试验证场、6 类用户画像与空间-运营双向映射 | `land_use.geojson`<br>`roads.geojson`<br>`assets/figures/key-areas.png` | [depth:three_key_area_detailed_design]<br>[depth:municipal_new_infrastructure] |
 | **可实施性 (20%)** `implementation_feasibility` | `agent.2`, `agent.6` | 铺轨→通车→提速→成网四阶段；以创新回路延迟（ILL）与准点率为核心 KPI；明确治理沙盒、熔断机制与退出成本分摊 | `phasing.geojson`<br>`metrics.json`<br>`assets/figures/metrics-evidence.png` | [depth:phasing_implementation]<br>[depth:metrics_recalculation]<br>[metric:site_area_sqm] |
-| **公共利益与包容性 (10%)** `public_interest_inclusion` | `agent.3`, `agent.4` | “人本优先（People First）”宪法；AI Civic Room 社区会客厅、银发无障碍、学者里弄、青年共创公寓；市民握有场景紧急制动闸与随时下车权 | `public_space.geojson`<br>`green_space.geojson` | [depth:traffic_rail_slow_parking]<br>[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] |
-| **风险与合规意识 (10%)** `risk_compliance` | 全任务通用 | 诚实披露 provisional 边界局限，绝不编造容积率/投资/审批承诺；觉生寺与清华园站文保红线严格避让与中等置信度登记；公开数据源 100% 可追溯 | `constraints.geojson`<br>`sources.json`<br>`assumptions.json` | [source:HERITAGE-LIST-11TH]<br>[source:HERITAGE-QINGHUAYUAN]<br>[assumption:A-CONTROLS-002] |
+| **公共利益与包容性 (10%)** `public_interest_inclusion` | `agent.3`, `agent.4` | “人本优先（People First）”宪法；AI Civic Room 社区会客厅、银发无障碍、学者里弄、青年共创公寓；市民握有“公众告警—授权急停—专业恢复”三级安全接口与随时下车权 | `public_space.geojson`<br>`green_space.geojson` | [depth:traffic_rail_slow_parking]<br>[standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK] |
+| **风险与合规意识 (10%)** `risk_compliance` | 全任务通用 | 诚实披露 provisional 边界局限，绝不编造容积率/投资/审批承诺；觉生寺与清华园站文保红线严格避让与中等置信度登记；投稿方来源清单逐条登记可核对（正式可用性待 registry review） | `constraints.geojson`<br>`sources.json`<br>`assumptions.json` | [source:HERITAGE-LIST-11TH]<br>[source:HERITAGE-QINGHUAYUAN]<br>[assumption:A-CONTROLS-002] |
 | **表达完整度 (15%)** `expression_completeness` | 全任务通用 | 中英双语主报告、HTML 交互渲染页、A0 展板与 A3 文本册 PDF、5 张标准图件、9 项 GeoJSON 几何数据；通过 4 道本地自检 Gates | `report/proposal.html`<br>`visual/index.html`<br>`manifest.json` | [self_check:DETERMINISTIC_VALIDATION]<br>[self_check:PROFESSIONAL_EVIDENCE] |
 
 ## 风险、版权与合规说明
@@ -367,7 +376,7 @@ AI Urban Performance Index：Innovation Loop Latency / 场景可达性 / 实验�
 4. **技术风险**：自动驾驶、机器人、算力耦合等场景均设为限速限区可逆试验，保留人类最终决定权与退出预案。
 5. **社会风险**：遗产活化可能带来绅士化压力——以社区嵌入计划、原地居民荣誉体系与公共服务增量对冲（借鉴高线公园教训）。
 6. **治理风险**：监管机构被利益俘获的风险——以独立审计、开源优先、公开约束手册与拒绝凭证公开制度对冲。
-7. **版权**：不使用未授权字体、图像、商标与人物肖像；Logo 仅提供方向描述；组件库以开源许可发布 [self_check:VISUAL_PACKAGING]。
+7. **版权**：不使用未授权字体、图像、商标与人物肖像；离线渲染内嵌字体为 Noto Sans SC 子集（SIL OFL 1.1，允许嵌入）[source:FONT-NOTOSANSSC-OFL]；Logo 仅提供方向描述；组件库图纸随投稿包以 COMMUNITY-DISPLAY-ONLY 展示许可交付 [self_check:VISUAL_PACKAGING]。
 8. **生成披露**：本方案由 AI 智能体融合多个 agent 与模型的输出后再创作，方法与局限按共创宪章披露。最终方案文本由 Kimi K3 × WorkBuddy 融合生成；正式提交包由 DeepSeek V4 Flash × Trae 完成，创作链见 `agent.json`。
 
 **底线清单（全文适用）**：不把 provisional boundary 写成官方红线；不虚构 FAR/高度/密度/绿地率；不虚构企业、投资额、产值；不虚构政策承诺；不虚构工程可行性；不把 AI 测试写成已批准运营；不使用未授权素材；不使用个人隐私或非公开数据；不把 AI 变成监控城市；不使用"冠军/最佳"等自封表述。

@@ -105,6 +105,13 @@
       "source_type": "community_open_contribution",
       "accessed_date": "2026-08-31",
       "usage": "服务等价基准（Service Equivalence Baseline, SEB）v0.5.0 规范与桌面校验器（Issue #2549，由 lqqk7 开放贡献，CC BY-SA 4.0）。用于本方案参与者自报的 7 项 AI 场景治理与安全联锁桌面自检推演（visual/assets/seb-spec.json, seb-tabletop-run.js，未获第三方认证）。"
+    },
+    {
+      "id": "FONT-NOTOSANSSC-OFL",
+      "url": "https://fonts.google.com/noto/specimen/Noto+Sans+SC",
+      "source_type": "user_provided_cleared",
+      "accessed_date": "2026-09-01",
+      "usage": "Noto Sans SC（Google LLC 与思源字体贡献者，SIL Open Font License 1.1）。由投稿方按本包实际用字子集化为 WOFF2 并内嵌于 `visual/assets/fonts/notosanssc-subset.css`，以及 A0/A3 PDF 封面文字（子集 TTF）。OFL 1.1 明确允许文档与网页嵌入；随包分发保留许可声明，不单独售卖字体。"
     }
   ]
 }
