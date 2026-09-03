@@ -187,6 +187,19 @@
       "assumptions": [
         "在 EPSG:4548 坐标系下对 13 个公共空间要素做 unary_union 融合并与 provisional 场地边界相交裁剪后计算的精确投影面积。"
       ]
+    },
+    "slow_corridor_length_m": {
+      "status": "known",
+      "value": 11005.9,
+      "unit": "m",
+      "source_files": [
+        "geometry/roads.geojson"
+      ],
+      "formula": "sum(length(line)) for road_class=greenway = ROAD-001 (9468.3 m 人字折返主脊) + ROAD-012 (512.7 m) + ROAD-013 (512.5 m) + ROAD-014 (512.4 m 三条东西缝合廊道)",
+      "confidence": "low",
+      "assumptions": [
+        "在 EPSG:4548 坐标系下对 roads.geojson 中 4 条 greenway 中心线逐段投影长度求和；折返线形为概念表达，基于 provisional 几何，官方红线发布后复算。图件与正文中旧有“12.8 km”表述已统一修正为本复算值（约 11.0 km，主脊约 9.5 km）。"
+      ]
     }
   }
 }

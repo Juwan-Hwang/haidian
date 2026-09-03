@@ -112,6 +112,55 @@
       "source_type": "user_provided_cleared",
       "accessed_date": "2026-09-01",
       "usage": "Noto Sans SC（Google LLC 与思源字体贡献者，SIL Open Font License 1.1）。由投稿方按本包实际用字子集化为 WOFF2 并内嵌于 `visual/assets/fonts/notosanssc-subset.css`，以及 A0/A3 PDF 封面文字（子集 TTF）。OFL 1.1 明确允许文档与网页嵌入；随包分发保留许可声明，不单独售卖字体。"
+    },
+    {
+      "id": "CASE-KENDALL",
+      "url": "https://en.wikipedia.org/wiki/Kendall_Square",
+      "source_type": "public_web_background",
+      "accessed_date": "2026-09-02",
+      "usage": "波士顿 Kendall Square 公开背景资料（紧邻 MIT 的产学研转化与工业仓储渐进再开发）。仅用于 case_study_table 机制借鉴与风险教训，不作正式规划依据。"
+    },
+    {
+      "id": "CASE-KINGSX",
+      "url": "https://www.kingscross.co.uk/about-us",
+      "source_type": "public_web_background",
+      "accessed_date": "2026-09-02",
+      "usage": "伦敦 King's Cross 再生项目官方公开页面（铁路遗存再生与机构伙伴网络运营）。仅用于 case_study_table 机制借鉴，不作正式规划依据。"
+    },
+    {
+      "id": "CASE-STATIONF",
+      "url": "https://stationf.co/",
+      "source_type": "public_web_background",
+      "accessed_date": "2026-09-02",
+      "usage": "巴黎 Station F 官方公开页面（创业服务单体高度集聚）。仅用于 case_study_table 机制借鉴，不作正式规划依据。"
+    },
+    {
+      "id": "CASE-MILA",
+      "url": "https://mila.quebec/en/",
+      "source_type": "public_web_background",
+      "accessed_date": "2026-09-02",
+      "usage": "蒙特利尔 Mila 官方公开页面（AI 学术—产业—创业三角连接）。仅用于 case_study_table 机制借鉴，不作正式规划依据。"
+    },
+    {
+      "id": "CASE-SUPERBLOCKS",
+      "url": "https://www.barcelona.cat/superilles/en",
+      "source_type": "public_web_background",
+      "accessed_date": "2026-09-02",
+      "usage": "巴塞罗那 Superblocks 官方公开页面（街坊单元重构城市流）。仅用于 case_study_table 机制借鉴，不作正式规划依据。"
+    },
+    {
+      "id": "CASE-QUAYSIDE",
+      "url": "https://en.wikipedia.org/wiki/Sidewalk_Toronto",
+      "source_type": "public_web_background",
+      "accessed_date": "2026-09-02",
+      "usage": "多伦多 Quayside/Sidewalk Toronto 公开背景资料（2020 年项目终止，数据治理与公众同意教训）。反面案例，仅用于 case_study_table 风险教训，不作正式规划依据。"
+    },
+    {
+      "id": "CASE-HIGHLINE",
+      "url": "https://www.thehighline.org/",
+      "source_type": "public_web_background",
+      "accessed_date": "2026-09-02",
+      "usage": "纽约 High Line 官方公开页面（铁路遗存线性公园与社会组织运营，含绅士化讨论）。仅用于 case_study_table 机制借鉴与风险教训，不作正式规划依据。"
     }
   ]
 }
